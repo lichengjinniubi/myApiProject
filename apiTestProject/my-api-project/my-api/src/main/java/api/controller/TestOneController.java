@@ -21,6 +21,7 @@ public class TestOneController {
     @Autowired
     private IUserService iUserService;
 
+
     @RequestMapping("/getCar")
     public String getCar(){
         log.error("testGetCar {}", 3333);
@@ -30,7 +31,6 @@ public class TestOneController {
 
     @RequestMapping("/testCondition")
     public String testCondition(){
-
         return iUserService.getUserName();
     }
 

@@ -1,0 +1,5 @@
+coreService/AppApplication.class
+coreService/service/impl/CoreUserServiceImpl.class
+coreService/service/impl/UserServiceImpl.class
+coreService/service/IUserService.class
+coreService/service/ICoreUserService.class
