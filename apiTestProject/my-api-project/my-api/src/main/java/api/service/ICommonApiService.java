@@ -2,6 +2,7 @@ package api.service;
 
 import api.enums.OperateTypeEnum;
 import api.enums.TestSmartInstanceEnum;
+import api.enums.TestSmartInstanceEnumV2;
 
 public interface ICommonApiService {
 
@@ -10,4 +11,6 @@ public interface ICommonApiService {
 
 
     TestSmartInstanceEnum getSmartInstance(TestSmartInstanceEnum testSmartInstanceEnum);
+
+    TestSmartInstanceEnumV2 getSmartInstanceV2(TestSmartInstanceEnumV2 testSmartInstanceEnum);
 }

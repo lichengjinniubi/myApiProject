@@ -3,6 +3,7 @@ package api.controller;
 
 import api.enums.OperateTypeEnum;
 import api.enums.TestSmartInstanceEnum;
+import api.enums.TestSmartInstanceEnumV2;
 import api.manage.TypeOperateHanlder;
 import api.service.ICommonApiService;
 import api.service.IOperateTypeService;
@@ -33,6 +34,12 @@ public class OperateTypeController {
     @RequestMapping("/getSmartInstance")
     public String getSmartInstance(){
         TestSmartInstanceEnum smartInstance = iCommonApiService.getSmartInstance(TestSmartInstanceEnum.FOREST_CANDLE_ACTIVITY);
+        return smartInstance.name();
+    }
+
+    @RequestMapping("/getSmartInstanceV2")
+    public String getSmartInstanceV2(){
+        TestSmartInstanceEnumV2 smartInstance = iCommonApiService.getSmartInstanceV2(TestSmartInstanceEnumV2.FOREST_CANDLE_ACTIVITY_V2);
         return smartInstance.name();
     }
 }
