@@ -10,6 +10,7 @@ import api.service.IOperateTypeService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -38,8 +39,9 @@ public class OperateTypeController {
     }
 
     @RequestMapping("/getSmartInstanceV2")
-    public String getSmartInstanceV2(){
-        TestSmartInstanceEnumV2 smartInstance = iCommonApiService.getSmartInstanceV2(TestSmartInstanceEnumV2.FOREST_CANDLE_ACTIVITY_V2);
+    public String getSmartInstanceV2(String type){
+        TestSmartInstanceEnumV2 testSmartInstanceEnumV2 = TestSmartInstanceEnumV2.valueOf(type);
+        TestSmartInstanceEnumV2 smartInstance = iCommonApiService.getSmartInstanceV2(testSmartInstanceEnumV2);
         return smartInstance.name();
     }
 }

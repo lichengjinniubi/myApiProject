@@ -9,6 +9,8 @@ import api.service.ICommonApiService;
 import api.service.IOperateTypeService;
 import api.service.ITestSmartInstance;
 import api.service.ITestSmartInstanceV2;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -21,14 +23,17 @@ public class CommonApiServiceImpl implements ICommonApiService {
     @Autowired
     private TestSmartInstanceManager testSmartInstanceManager;
 
+    Logger logger = LogManager.getLogger(CommonApiServiceImpl.class);
     @Override
     public String getOperateType(OperateTypeEnum operateTypeEnum) {
+
         IOperateTypeService iOperateTypeService = operateTypeManager.getOperateHandler(operateTypeEnum);
         return iOperateTypeService.getOperateEnum().getType();
     }
 
     @Override
     public TestSmartInstanceEnum getSmartInstance(TestSmartInstanceEnum testSmartInstanceEnum) {
+        logger.info("testLichengjin");
         ITestSmartInstance instanceHandler = testSmartInstanceManager.getInstanceHandler(testSmartInstanceEnum);
         return instanceHandler.getType();
     }
@@ -36,6 +41,7 @@ public class CommonApiServiceImpl implements ICommonApiService {
 
     @Override
     public TestSmartInstanceEnumV2 getSmartInstanceV2(TestSmartInstanceEnumV2 testSmartInstanceEnum) {
+
         ITestSmartInstanceV2 instanceHandlerV2 = testSmartInstanceManager.getInstanceHandlerV2(testSmartInstanceEnum);
         return instanceHandlerV2.getType();
     }
