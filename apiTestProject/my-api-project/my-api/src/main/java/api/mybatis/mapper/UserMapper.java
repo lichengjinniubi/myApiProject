@@ -5,7 +5,7 @@ import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
-@Mapper
+//@Mapper
 public interface UserMapper {
 
     @Select("select * from tbl_user where id = #{id}")
