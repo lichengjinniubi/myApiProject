@@ -13,7 +13,8 @@
     <Appenders>
         <!--   控制台输出 appender    -->
         <Console name="Console" target="SYSTEM_OUT">
-            <PatternLayout pattern="%d{HH-mm:ss.SSS} [%t] [%-5level] %c{36}:%L --- %m%n" />
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+<!--            <PatternLayout pattern="%d{HH-mm:ss.SSS} [%t] [%-5level] %c{36}:%L -&#45;&#45; %m%n" />-->
         </Console>
 
 

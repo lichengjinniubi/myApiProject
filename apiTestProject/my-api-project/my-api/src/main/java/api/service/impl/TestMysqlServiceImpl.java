@@ -30,4 +30,14 @@ public class TestMysqlServiceImpl implements ITestMysqlService {
         logger.info("getUserId id:{} user:{}", id, user);
         return user;
     }
+
+
+    @Override
+    public void insertData(int id, String name, int tel) {
+        try {
+            userMapper.insertData(id, name, tel);
+        }catch (Exception e) {
+            logger.error("insertDataError", e);
+        }
+    }
 }
