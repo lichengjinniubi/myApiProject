@@ -46,7 +46,7 @@
     <!--    logger定义(root或自定义)    -->
     <Loggers>
         <!--    配置RootLogger日志等级为trace，引用appender为上面配置name为console的ConsoleAppender    -->
-        <Root level="trace">
+        <Root>
             <AppenderRef ref="Console" />
             <AppenderRef ref="info" />
             <AppenderRef ref="error" />

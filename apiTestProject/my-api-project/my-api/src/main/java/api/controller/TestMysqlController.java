@@ -22,7 +22,7 @@ public class TestMysqlController {
     @Autowired
     private ITestMysqlService iTestMysqlService;
 
-    Logger logger = LogManager.getLogger(TestMysqlController.class);
+    //Logger logger = LogManager.getLogger(TestMysqlController.class);
 
 
     @RequestMapping("/getUser")
@@ -34,7 +34,7 @@ public class TestMysqlController {
     @RequestMapping("/insertUser")
     public void insertUser(int id, String name, int tel){
         log.info("insertUserInfoForSlf4j");
-        logger.info("insertUserInfo");
+       // logger.info("insertUserInfo");
         iTestMysqlService.insertData(id, name, tel);
     }
 
