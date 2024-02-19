@@ -13,4 +13,9 @@ public interface ICommonApiService {
     TestSmartInstanceEnum getSmartInstance(TestSmartInstanceEnum testSmartInstanceEnum);
 
     TestSmartInstanceEnumV2 getSmartInstanceV2(TestSmartInstanceEnumV2 testSmartInstanceEnum);
+
+    String getSmartInstanceV3(TestSmartInstanceEnumV2 testSmartInstanceEnum);
+
+
+    String getData(OperateTypeEnum operateTypeEnum);
 }

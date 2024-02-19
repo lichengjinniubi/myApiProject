@@ -9,5 +9,8 @@ mybatis:
       jdbc-url: jdbc:mysql://localhost:3306/springDao?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=UTC
       username: root
       password: LCJ3mysql
+#logging:
+#  level:
+#    root: info
 
 

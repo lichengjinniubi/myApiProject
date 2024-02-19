@@ -44,4 +44,18 @@ public class OperateTypeController {
         TestSmartInstanceEnumV2 smartInstance = iCommonApiService.getSmartInstanceV2(testSmartInstanceEnumV2);
         return smartInstance.name();
     }
+
+    @RequestMapping("/getSmartInstanceV3")
+    public String getSmartInstance3(String type){
+        TestSmartInstanceEnumV2 testSmartInstanceEnumV2 = TestSmartInstanceEnumV2.valueOf(type);
+        return iCommonApiService.getSmartInstanceV3(testSmartInstanceEnumV2);
+    }
+
+
+
+    @RequestMapping("/getcelue")
+    public String getcelue(String type){
+        OperateTypeEnum operateTypeEnum = OperateTypeEnum.valueOf(type);
+        return iCommonApiService.getData(operateTypeEnum);
+    }
 }

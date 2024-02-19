@@ -11,10 +11,12 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.jdbc.DataSourceBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
 import javax.sql.DataSource;
 
 @Configuration
+@EnableAspectJAutoProxy
 public class DataSourceConfig {
 
 ///////////////使用连接池连接///////////////////

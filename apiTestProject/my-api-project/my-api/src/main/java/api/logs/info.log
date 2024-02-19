@@ -1,18 +1,4 @@
-2023-08-24 17:27:05,816 INFO  [mainraceId-] (StartupInfoLogger#logStarting:55) main - Starting AppApplication using Java 14.0.2 on BJ3160-5.local with PID 22677 (/Users/momo/springBootLearn/myApiProject/apiTestProject/my-api-project/my-api/target/classes started by momo in /Users/momo/springBootLearn)
-2023-08-24 17:27:05,831 INFO  [mainraceId-] (SpringApplication#logStartupProfileInfo:640) main - No active profile set, falling back to 1 default profile: "default"
-2023-08-24 17:27:07,585 INFO  [mainraceId-] (TomcatWebServer#initialize:108) main - Tomcat initialized with port(s): 8080 (http)
-2023-08-24 17:27:07,672 INFO  [mainraceId-] (ServletWebServerApplicationContext#prepareWebApplicationContext:290) main - Root WebApplicationContext: initialization completed in 1771 ms
-2023-08-24 17:27:09,063 INFO  [mainraceId-] (TomcatWebServer#start:220) main - Tomcat started on port(s): 8080 (http) with context path ''
-2023-08-24 17:27:09,104 INFO  [mainraceId-] (StartupInfoLogger#logStarted:61) main - Started AppApplication in 3.75 seconds (JVM running for 4.836)
-2023-08-24 17:27:42,240 INFO  [mainraceId-] (StartupInfoLogger#logStarting:55) main - Starting AppApplication using Java 14.0.2 on BJ3160-5.local with PID 22734 (/Users/momo/springBootLearn/myApiProject/apiTestProject/my-api-project/my-api/target/classes started by momo in /Users/momo/springBootLearn)
-2023-08-24 17:27:42,246 INFO  [mainraceId-] (SpringApplication#logStartupProfileInfo:640) main - No active profile set, falling back to 1 default profile: "default"
-2023-08-24 17:27:44,102 INFO  [mainraceId-] (TomcatWebServer#initialize:108) main - Tomcat initialized with port(s): 8080 (http)
-2023-08-24 17:27:44,202 INFO  [mainraceId-] (ServletWebServerApplicationContext#prepareWebApplicationContext:290) main - Root WebApplicationContext: initialization completed in 1883 ms
-2023-08-24 17:27:45,828 INFO  [mainraceId-] (TomcatWebServer#start:220) main - Tomcat started on port(s): 8080 (http) with context path ''
-2023-08-24 17:27:45,866 INFO  [mainraceId-] (StartupInfoLogger#logStarted:61) main - Started AppApplication in 4.2 seconds (JVM running for 5.375)
-2023-08-24 17:28:15,606 INFO  [mainraceId-] (StartupInfoLogger#logStarting:55) main - Starting AppApplication using Java 14.0.2 on BJ3160-5.local with PID 22750 (/Users/momo/springBootLearn/myApiProject/apiTestProject/my-api-project/my-api/target/classes started by momo in /Users/momo/springBootLearn)
-2023-08-24 17:28:15,614 INFO  [mainraceId-] (SpringApplication#logStartupProfileInfo:640) main - No active profile set, falling back to 1 default profile: "default"
-2023-08-24 17:28:17,302 INFO  [mainraceId-] (TomcatWebServer#initialize:108) main - Tomcat initialized with port(s): 8080 (http)
-2023-08-24 17:28:17,393 INFO  [mainraceId-] (ServletWebServerApplicationContext#prepareWebApplicationContext:290) main - Root WebApplicationContext: initialization completed in 1708 ms
-2023-08-24 17:28:18,771 INFO  [mainraceId-] (TomcatWebServer#start:220) main - Tomcat started on port(s): 8080 (http) with context path ''
-2023-08-24 17:28:18,808 INFO  [mainraceId-] (StartupInfoLogger#logStarted:61) main - Started AppApplication in 3.68 seconds (JVM running for 4.647)
+2024-01-05 11:17:314 ERROR [http-nio-8080-exec-3raceId-] (TestSmartInstanceManager#getInstanceHandlerV2:45) http-nio-8080-exec-3 - getInstanceHandlerV2Error
+2024-01-05 11:19:206 ERROR [http-nio-8080-exec-1raceId-] (TestSmartInstanceManager#getInstanceHandlerV2:45) http-nio-8080-exec-1 - getInstanceHandlerV2Error
+2024-01-05 11:20:193 ERROR [http-nio-8080-exec-1raceId-] (TestSmartInstanceManager#getInstanceHandlerV2:45) http-nio-8080-exec-1 - getInstanceHandlerV2Error
+2024-01-05 11:26:251 ERROR [http-nio-8080-exec-2raceId-] (TestSmartInstanceManager#getInstanceHandlerV2:50) http-nio-8080-exec-2 - getInstanceHandlerV2Error

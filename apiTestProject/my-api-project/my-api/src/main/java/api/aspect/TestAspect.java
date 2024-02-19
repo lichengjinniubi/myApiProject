@@ -4,10 +4,10 @@ package api.aspect;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.Signature;
-import org.aspectj.lang.annotation.Around;
-import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.*;
 import org.aspectj.lang.reflect.MethodSignature;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.stereotype.Component;
 
 import java.lang.reflect.Method;
@@ -39,5 +39,23 @@ public class TestAspect {
         Object result = joinPoint.proceed(args);
         log.info("processResult result:{}", result);
         return result;
+    }
+
+
+    @AfterReturning(value = "execution(* api.*.*.*(..))", returning = "retval")
+    public void dealReturn(Object retval){
+        log.info("dealReturn retval:{}", retval);
+    }
+
+
+
+    @AfterThrowing(value = "execution(* api.*.*.*(..))", throwing = "e")
+    public void dealError(Exception e){
+        log.info("dealError error:{}", e.getMessage());
+    }
+
+    @Before("execution(* api.*.*.*(..))")
+    public void testBefore(){
+        log.info("testBefore");
     }
 }
