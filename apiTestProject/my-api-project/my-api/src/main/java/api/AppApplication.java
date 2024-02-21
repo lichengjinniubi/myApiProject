@@ -19,5 +19,9 @@ public class AppApplication {
         for(Object s : args){
             System.out.println(s);
         }
+
+
+
+
     }
 }
