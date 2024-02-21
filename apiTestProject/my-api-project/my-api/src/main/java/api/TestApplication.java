@@ -2,6 +2,11 @@ package api;
 
 
 
+import api.bean.excel.Student;
+import api.utils.ExcelUtils;
+import org.springframework.beans.BeanUtils;
+
+import javax.servlet.http.HttpServletResponse;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 
@@ -9,7 +14,7 @@ import java.io.FileOutputStream;
 public class TestApplication {
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         //读取文件
 //        try {
 //            FileInputStream fileInputStream = new FileInputStream("/Users/momo/springBootLearn/myApiProject/apiTestProject/my-api-project/my-api/src/main/java/api/service/file/inputText.txt");
@@ -26,20 +31,22 @@ public class TestApplication {
 
 
         //复制文件
-        try {
-            FileInputStream fileInputStream = new FileInputStream("/Users/momo/springBootLearn/myApiProject/apiTestProject/my-api-project/my-api/src/main/java/api/service/file/inputText.txt");
-            FileOutputStream fileOutputStream = new FileOutputStream("/Users/momo/springBootLearn/myApiProject/apiTestProject/my-api-project/my-api/src/main/java/api/service/file/inputTextCopy.txt");
-            byte[] bytes = new byte[4];
-            int read;
-            while ((read = fileInputStream.read(bytes)) != -1) {
-                // 把byte数组转换成字符串
-                fileOutputStream.write(bytes, 0, read);
-            }
-            fileInputStream.close();
-            fileOutputStream.close();
-        }catch (Exception e){
-            System.out.println(e);
-        }
+//        try {
+//            FileInputStream fileInputStream = new FileInputStream("/Users/momo/springBootLearn/myApiProject/apiTestProject/my-api-project/my-api/src/main/java/api/service/file/inputText.txt");
+//            FileOutputStream fileOutputStream = new FileOutputStream("/Users/momo/springBootLearn/myApiProject/apiTestProject/my-api-project/my-api/src/main/java/api/service/file/inputTextCopy.txt");
+//            byte[] bytes = new byte[4];
+//            int read;
+//            while ((read = fileInputStream.read(bytes)) != -1) {
+//                // 把byte数组转换成字符串
+//                fileOutputStream.write(bytes, 0, read);
+//            }
+//            fileInputStream.close();
+//            fileOutputStream.close();
+//        }catch (Exception e){
+//            System.out.println(e);
+//        }
 
+
+        BeanUtils.copyProperties();
     }
 }

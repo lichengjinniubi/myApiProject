@@ -31,6 +31,14 @@ public class FileOperateController {
 
 
 
+    @RequestMapping("/exportExcel")
+    public String exportExcel() throws Exception {
+        fileOperate.exportExcel();
+        return "";
+    }
+
+
+
 
 
 
