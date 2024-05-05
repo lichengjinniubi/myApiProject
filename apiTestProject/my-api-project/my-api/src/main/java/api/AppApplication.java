@@ -14,14 +14,4 @@ public class AppApplication {
         SpringApplication.run(AppApplication.class, args);
     }
 
-
-    public static void getData(Object ...args){
-        for(Object s : args){
-            System.out.println(s);
-        }
-
-
-
-
-    }
 }
