@@ -8,6 +8,6 @@ public class BCmp extends NodeComponent {
 
     @Override
     public void process() {
-        //do your business
+        System.out.println("success do business");
     }
 }

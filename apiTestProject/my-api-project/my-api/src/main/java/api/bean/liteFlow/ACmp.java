@@ -8,6 +8,6 @@ public class ACmp extends NodeComponent {
 
     @Override
     public void process() {
-        //do your business
+        System.out.println("do business A");
     }
 }

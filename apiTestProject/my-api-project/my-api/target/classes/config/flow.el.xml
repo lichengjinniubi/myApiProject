@@ -5,6 +5,6 @@
     </chain>
 
     <chain name="chain2">
-        IF(OR(f,AND(d, e)), b, c);
+        IF(OR(f,AND(f, e)), b);
     </chain>
 </flow>

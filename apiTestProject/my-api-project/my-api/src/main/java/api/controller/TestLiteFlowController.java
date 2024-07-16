@@ -1,6 +1,7 @@
 package api.controller;
 
 import api.bean.liteFlow.context.TaskContext;
+import api.config.TestRuleSource;
 import api.service.ITestService;
 import api.service.IUserService;
 import com.yomahub.liteflow.core.FlowExecutor;
@@ -20,6 +21,7 @@ public class TestLiteFlowController {
 
     @Resource
     private FlowExecutor flowExecutor;
+
 
 
     @RequestMapping("/testRule")
@@ -43,9 +45,16 @@ public class TestLiteFlowController {
         HashMap<String, Object> taskMap = new HashMap<>();
         taskMap.put("money", 100);
         taskContext.setTaskMap(taskMap);
+
         LiteflowResponse response = flowExecutor.execute2Resp("chain2", null, taskContext);
         log.info("testRuleV3info path:{}", response.getExecuteStepStrWithTime());
         return response.isSuccess();
+    }
+
+
+    @RequestMapping("/testRuleV4")
+    public void testRuleV4(){
+        flowExecutor.reloadRule();
     }
 
 
