@@ -55,7 +55,7 @@ public class TestRuleSource extends ClassJsonFlowELParser {
         HashMap<String, String> ruleMap = new HashMap<>();
 
         ruleMap.put("name", "chain2");
-        ruleMap.put("value", System.currentTimeMillis() <= 1720666020000L ? "IF(OR(f,AND(f, e)), b)" : "IF(OR(f,AND(f, e)), a)");
+        ruleMap.put("value", System.currentTimeMillis() <= 1721124420000L ? "IF(OR(f,AND(f, e)), a)" : "IF(OR(f,AND(f, e)), b)");
         ruleList.add(ruleMap);
         data.put("chain", ruleList);
 
