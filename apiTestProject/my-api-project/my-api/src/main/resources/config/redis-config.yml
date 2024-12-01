@@ -1,0 +1,19 @@
+spacy:
+  momostore:
+    targets:
+      - address: momostore_marry
+        pool: MEDIUM
+        timeout: 400
+        beanname: spacyCommonBackDao
+
+      - address: momostore_redis_expire_6674
+        pool: SMALL
+        timeout: 1000
+        beanname: spacyTestAccountDao
+
+
+flexi:
+  momostore:
+    address: redis_6190
+    pool: test
+    timeout: 1000

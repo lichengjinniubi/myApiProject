@@ -1,56 +1,144 @@
-2024-07-10 20:05:381 ERROR [mainraceId-] (SpringApplication#reportFailure:830) main - Application run failed
-com.yomahub.liteflow.exception.FlowExecutorNotInitException: init flow executor cause error for path [api.config.TestRuleSource],reason: null
-	at com.yomahub.liteflow.core.FlowExecutor.init(FlowExecutor.java:197) ~[liteflow-core-2.12.0.jar:2.12.0]
-	at com.yomahub.liteflow.springboot.LiteflowExecutorInit.afterSingletonsInstantiated(LiteflowExecutorInit.java:21) ~[liteflow-spring-boot-starter-2.12.0.jar:2.12.0]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:972) ~[spring-beans-5.3.17.jar:5.3.17]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.17.jar:5.3.17]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.17.jar:5.3.17]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.5.jar:2.6.5]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740) ~[spring-boot-2.6.5.jar:2.6.5]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415) ~[spring-boot-2.6.5.jar:2.6.5]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-2.6.5.jar:2.6.5]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312) ~[spring-boot-2.6.5.jar:2.6.5]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) ~[spring-boot-2.6.5.jar:2.6.5]
-	at api.AppApplication.main(AppApplication.java:14) ~[classes/:?]
-2024-07-10 20:07:448 ERROR [mainraceId-] (SpringApplication#reportFailure:830) main - Application run failed
-com.yomahub.liteflow.exception.FlowExecutorNotInitException: init flow executor cause error for path [api.config.TestRuleSource],reason: null
-	at com.yomahub.liteflow.core.FlowExecutor.init(FlowExecutor.java:197) ~[liteflow-core-2.12.0.jar:2.12.0]
-	at com.yomahub.liteflow.springboot.LiteflowExecutorInit.afterSingletonsInstantiated(LiteflowExecutorInit.java:21) ~[liteflow-spring-boot-starter-2.12.0.jar:2.12.0]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:972) ~[spring-beans-5.3.17.jar:5.3.17]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.17.jar:5.3.17]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.17.jar:5.3.17]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.5.jar:2.6.5]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740) ~[spring-boot-2.6.5.jar:2.6.5]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415) ~[spring-boot-2.6.5.jar:2.6.5]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-2.6.5.jar:2.6.5]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312) ~[spring-boot-2.6.5.jar:2.6.5]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) ~[spring-boot-2.6.5.jar:2.6.5]
-	at api.AppApplication.main(AppApplication.java:14) ~[classes/:?]
-2024-07-10 20:07:667 ERROR [mainraceId-] (SpringApplication#reportFailure:830) main - Application run failed
-com.yomahub.liteflow.exception.FlowExecutorNotInitException: init flow executor cause error for path [api.config.TestRuleSource],reason: null
-	at com.yomahub.liteflow.core.FlowExecutor.init(FlowExecutor.java:197) ~[liteflow-core-2.12.0.jar:2.12.0]
-	at com.yomahub.liteflow.springboot.LiteflowExecutorInit.afterSingletonsInstantiated(LiteflowExecutorInit.java:21) ~[liteflow-spring-boot-starter-2.12.0.jar:2.12.0]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:972) ~[spring-beans-5.3.17.jar:5.3.17]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.17.jar:5.3.17]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.17.jar:5.3.17]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.5.jar:2.6.5]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740) ~[spring-boot-2.6.5.jar:2.6.5]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415) ~[spring-boot-2.6.5.jar:2.6.5]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-2.6.5.jar:2.6.5]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312) ~[spring-boot-2.6.5.jar:2.6.5]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) ~[spring-boot-2.6.5.jar:2.6.5]
-	at api.AppApplication.main(AppApplication.java:14) ~[classes/:?]
-2024-07-10 20:10:293 ERROR [mainraceId-] (SpringApplication#reportFailure:830) main - Application run failed
-com.yomahub.liteflow.exception.FlowExecutorNotInitException: init flow executor cause error for path [api.config.TestRuleSource],reason: null
-	at com.yomahub.liteflow.core.FlowExecutor.init(FlowExecutor.java:197) ~[liteflow-core-2.12.0.jar:2.12.0]
-	at com.yomahub.liteflow.springboot.LiteflowExecutorInit.afterSingletonsInstantiated(LiteflowExecutorInit.java:21) ~[liteflow-spring-boot-starter-2.12.0.jar:2.12.0]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:972) ~[spring-beans-5.3.17.jar:5.3.17]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.17.jar:5.3.17]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.17.jar:5.3.17]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.5.jar:2.6.5]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740) ~[spring-boot-2.6.5.jar:2.6.5]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415) ~[spring-boot-2.6.5.jar:2.6.5]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-2.6.5.jar:2.6.5]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312) ~[spring-boot-2.6.5.jar:2.6.5]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) ~[spring-boot-2.6.5.jar:2.6.5]
-	at api.AppApplication.main(AppApplication.java:14) ~[classes/:?]
+2024-11-03 19:23:261 ERROR [mainraceId-] (LoggingFailureAnalysisReporter#report:40) main - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field spacyDaoListConfig in api.config.SpacyMomoStoreBeanFactoryV2 required a bean of type 'api.config.SpacyDaoListConfig' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'api.config.SpacyDaoListConfig' in your configuration.
+
+2024-11-03 19:23:966 ERROR [mainraceId-] (LoggingFailureAnalysisReporter#report:40) main - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field spacyDaoListConfig in api.config.SpacyMomoStoreBeanFactoryV2 required a bean of type 'api.config.SpacyDaoListConfig' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'api.config.SpacyDaoListConfig' in your configuration.
+
+2024-11-03 19:25:605 ERROR [mainraceId-] (LoggingFailureAnalysisReporter#report:40) main - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field userMapper in api.service.impl.TestMysqlServiceImpl required a bean of type 'api.mybatis.mapper.UserMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'api.mybatis.mapper.UserMapper' in your configuration.
+
+2024-11-03 19:29:125 ERROR [mainraceId-] (LoggingFailureAnalysisReporter#report:40) main - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field iCoreUserService in api.controller.TestOneController required a bean of type 'coreService.service.ICoreUserService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'coreService.service.ICoreUserService' in your configuration.
+
+2024-11-03 19:31:346 ERROR [mainraceId-] (LoggingFailureAnalysisReporter#report:40) main - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field iCoreUserService in api.controller.TestOneController required a bean of type 'coreService.service.ICoreUserService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'coreService.service.ICoreUserService' in your configuration.
+
+2024-11-03 20:05:046 ERROR [mainraceId-] (LoggingFailureAnalysisReporter#report:40) main - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field iCoreUserService in api.controller.TestOneController required a bean of type 'coreService.service.ICoreUserService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'coreService.service.ICoreUserService' in your configuration.
+
+2024-11-03 20:11:574 ERROR [mainraceId-] (LoggingFailureAnalysisReporter#report:40) main - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field iCoreUserService in api.controller.TestOneController required a bean of type 'coreService.service.ICoreUserService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'coreService.service.ICoreUserService' in your configuration.
+
+2024-11-03 22:49:485 ERROR [mainraceId-] (LoggingFailureAnalysisReporter#report:40) main - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field iCoreUserService in api.controller.TestOneController required a bean of type 'coreService.service.ICoreUserService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'coreService.service.ICoreUserService' in your configuration.
+
